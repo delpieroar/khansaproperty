@@ -1,0 +1,138 @@
+.main-galery {
+    flex: 1;
+    width: 80%; /* Menghapus duplikat width */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Mengubah dari 'initial' ke 'flex-start' */
+    margin: 0 auto; /* Memusatkan galeri */
+    padding: 20px 0; /* Menambahkan padding di atas dan bawah */
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px; /* Menambahkan jarak di bawah judul */
+}
+
+.card {
+    display: block;
+    width: 23%; /* Menyesuaikan lebar untuk spasi yang lebih baik */
+    margin-bottom: 20px; /* Menambahkan jarak di bawah setiap kartu */
+    overflow: hidden; /* Menghindari konten yang meluap */
+    border-radius: 7px; /* Memberikan radius pada seluruh kartu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek 3D */
+    transition: transform 0.2s; /* Menambahkan transisi untuk efek hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Menambahkan efek hover */
+}
+
+.card a {
+    display: block;
+    width: 100%;
+    height: 100%; /* Menggunakan seluruh tinggi kartu */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    color: inherit; /* Memastikan warna teks tetap */
+}
+
+.card img {
+    width: 100%;
+    height: auto; /* Memastikan gambar tetap proporsional */
+    border-radius: 7px; /* Menambahkan radius pada gambar */
+    object-fit: cover;
+}
+.main-galery {
+    flex: 1;
+    width: 80%; /* Menghapus duplikat width */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Mengubah dari 'initial' ke 'flex-start' */
+    margin: 0 auto; /* Memusatkan galeri */
+    padding: 20px 0; /* Menambahkan padding di atas dan bawah */
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px; /* Menambahkan jarak di bawah judul */
+}
+
+.card {
+    display: block;
+    width: 23%; /* Menyesuaikan lebar untuk spasi yang lebih baik */
+    margin-bottom: 20px; /* Menambahkan jarak di bawah setiap kartu */
+    overflow: hidden; /* Menghindari konten yang meluap */
+    border-radius: 7px; /* Memberikan radius pada seluruh kartu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek 3D */
+    transition: transform 0.2s; /* Menambahkan transisi untuk efek hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Menambahkan efek hover */
+}
+
+.card a {
+    display: block;
+    width: 100%;
+    height: 100%; /* Menggunakan seluruh tinggi kartu */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    color: inherit; /* Memastikan warna teks tetap */
+}
+
+.card img {
+    width: 100%;
+    height: auto; /* Memastikan gambar tetap proporsional */
+    border-radius: 7px; /* Menambahkan radius pada gambar */
+    object-fit: cover;
+}
+.main-galery {
+    flex: 1;
+    width: 80%; /* Menghapus duplikat width */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Mengubah dari 'initial' ke 'flex-start' */
+    margin: 0 auto; /* Memusatkan galeri */
+    padding: 20px 0; /* Menambahkan padding di atas dan bawah */
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px; /* Menambahkan jarak di bawah judul */
+}
+
+.card {
+    display: block;
+    width: 23%; /* Menyesuaikan lebar untuk spasi yang lebih baik */
+    margin-bottom: 20px; /* Menambahkan jarak di bawah setiap kartu */
+    overflow: hidden; /* Menghindari konten yang meluap */
+    border-radius: 7px; /* Memberikan radius pada seluruh kartu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek 3D */
+    transition: transform 0.2s; /* Menambahkan transisi untuk efek hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Menambahkan efek hover */
+}
+
+.card a {
+    display: block;
+    width: 100%;
+    height: 100%; /* Menggunakan seluruh tinggi kartu */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    color: inherit; /* Memastikan warna teks tetap */
+}
+
+.card img {
+    width: 100%;
+    height: auto; /* Memastikan gambar tetap proporsional */
+    border-radius: 7px; /* Menambahkan radius pada gambar */
+    object-fit: cover;
+}

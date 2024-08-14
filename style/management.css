@@ -1,0 +1,147 @@
+.title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.tombol-management {
+    padding: 20px;
+    width: 80%; /* Disesuaikan untuk mencakup semua tombol */
+    display: flex;
+    flex-wrap: wrap; /* Menangani tombol jika terlalu panjang */
+    justify-content: space-around; /* Distribusi ruang antara tombol */
+    align-items: center;
+    margin: auto; /* Memusatkan container */
+}
+
+.tombol-insert, .tombol-hapus {
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    margin: 5px; /* Menambahkan margin antara tombol */
+}
+
+.tombol-insert {
+    background-color: #48dbfb;
+}
+
+.kecil {
+    padding: 8px;
+}
+
+.tombol-hapus {
+    background-color: red;
+}
+
+.informasi-rumah {
+    border-collapse: collapse;
+    width: 90%; /* Lebar disesuaikan */
+    margin: 20px auto; /* Pusatkan tabel */
+}
+
+.informasi-rumah td, .informasi-rumah th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center; /* Penyelarasan teks disesuaikan */
+}
+
+.informasi-rumah tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.informasi-rumah th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center; /* Penyelarasan teks disesuaikan */
+    background-color: orange;
+    color: white;
+}
+
+.nama-properti {
+    color: blue;
+    cursor: pointer;
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.nama-properti:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px; /* Jarak atas untuk memisahkan judul dari tombol */
+}
+
+.tombol-management {
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.tombol-insert, .tombol-edit, .tombol-hapus {
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tombol-insert {
+    background-color: #48dbfb;
+}
+
+.tombol-edit {
+    background-color: #4CAF50;
+}
+
+.tombol-hapus {
+    background-color: #f44336;
+}
+
+.tombol-insert:hover, .tombol-edit:hover, .tombol-hapus:hover {
+    transform: scale(1.05);
+}
+
+.kecil {
+    padding: 8px;
+}
+
+.informasi-rumah {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.informasi-rumah td, .informasi-rumah th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.informasi-rumah tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.informasi-rumah th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: orange;
+    color: white;
+}
+
+.nama-properti {
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nama-properti:hover {
+    text-decoration: underline;
+}

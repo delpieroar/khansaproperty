@@ -1,0 +1,201 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.main-content{
+    min-height: 115vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.border{
+    border: 0.001rem solid black;
+    margin: 10px 0;
+    padding: 10px;
+    min-height: auto;
+}
+
+.title{
+    font-size: 20px;
+    text-align: left;
+}
+
+.deskripsi{
+    margin: 25px 0;
+    font-size: 20px;
+}
+
+.sub-informasi{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-informasi{
+    width: 3%;
+}
+
+.deskripsi{
+    margin: 25px 0;
+    font-size: 20px;
+}
+
+.contact-person{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-person img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.information{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-information{
+    width: 40%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.sub-information h3{
+    margin-top: 10px;
+}
+
+.sub-information img{
+    max-width: 30%;
+}
+
+footer{
+    position: relative;
+}
+/* Gaya untuk tombol booking */
+.booking-form button {
+    background-color: #4CAF50; /* Latar belakang hijau */
+    color: white; /* Teks berwarna putih */
+    padding: 15px 20px; /* Padding untuk tombol */
+    border: none; /* Tanpa border */
+    border-radius: 4px; /* Sudut membulat */
+    cursor: pointer; /* Kursor pointer saat hover */
+    font-size: 16px; /* Ukuran font */
+    text-align: center; /* Teks rata tengah */
+    display: inline-block; /* Blok sebaris untuk alignment yang lebih baik */
+    transition: background-color 0.3s ease; /* Transisi halus untuk efek hover */
+}
+
+/* Efek hover untuk tombol booking */
+.booking-form button:hover {
+    background-color: #45a049; /* Hijau lebih gelap saat hover */
+}
+
+/* Opsional: Menyelaraskan form booking di dalam div border */
+.booking-form {
+    text-align: center; /* Rata tengah konten form */
+    margin-top: 20px; /* Margin atas */
+}

@@ -1,0 +1,73 @@
+.title{
+    font-size: 25px;
+}
+
+.profile-pictures{
+    max-width: 500px;
+    max-height: 500px;
+    margin: 20px 0;
+}
+
+.profile-pictures img{
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.name{
+    font-size: 32px;
+}
+
+.information{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-information{
+    font-size: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-information h3{
+    margin-top: 10px;
+}
+
+.sub-information img{
+    max-width: 25%;
+}
+
+.tombol-manajemen{
+    width: 45%;
+    display: flex;
+    margin: 0 25%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.tombol-manajemen a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.tombol-manajemen-akun{
+    background-color: #48dbfb;
+}
+
+.tombol-logout{
+    background-color: red;
+}
+
+footer{
+    margin-top: 15px;
+}
+

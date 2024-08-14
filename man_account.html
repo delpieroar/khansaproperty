@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css" type="text/css">
+    <link rel="stylesheet" href="style/man-account.css" type="text/css">
+    <!-- TAMBAHKAN CSS SENDIRI TERKAIT HALAMAN YANG INGIN DIBUAT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Contoh</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="logo">
+                <a href="index.php"><img src="pictures/icon2.png"></a> 
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <form method="GET" action="">
+                            <input type="text" name="cari" class="kotakCari">
+                            <input type="submit" name="cariRumah" value="CARI" class="tombolCari">
+                        </form>
+                    </li>
+                    <li class="navlist"><a href="index.php">HOME</a></li>
+                    <li class="navlist"><a href="#">GALERY</a></li>
+                    <li class="navlist"><a href="#">CONTACT</a></li>
+                    <?php 
+                        if(isset($_SESSION['level'])){
+                    ?>
+                        <li class='navlist'><a href='#'>MANAGEMENT</a></li>
+                        <li class="navlist tombolAkun"><a href="account.php">ACCOUNT</a></li>
+                    <?php
+                        }else{
+                    ?>  
+                        <li class="tombolLogin"><a href="login.php">LOG IN</a></li>
+                    <?php 
+                        }
+                    ?>
+                </ul>
+            </nav>
+        </header>
+        <div class="title">
+            <h1>Account Management</h1>
+        </div>
+        <div class="account-input">
+            <h3>ID User: <?php echo $id; ?></h3>
+            <h3>Email: <?php echo $email_user; ?></h3>
+            <div class="profile-pictures">
+                <?php 
+                    if (!empty($foto_user)) {
+                        echo '<img src="' . $foto_user . '" alt="Foto Profil">';
+                    } else {
+                        echo '<img src="default_foto.jpg" alt="Foto Profil">';
+                    }
+                ?>
+            </div>
+            <form action="" method="POST" enctype="multipart/form-data" class="edit-form">
+                <label for="foto-profil">Foto Profil</label>
+                <input id="foto-profil" name="foto-profil" type="file" accept="image/jpeg,image/png,image/jpg">
+                <label for="nama">Nama</label>
+                <input type="text" name="nama" id="nama" class="input-normal" value="<?php echo $nama_user; ?>">
+                <label for="no_hp">Nomor Telepon (+62)</label>
+                <input type="number" name="no_hp" id="no_hp" class="input-normal" value="<?php echo $no_user; ?>">
+                <label for="password">Password</label>
+                <input type="password" name="ver_password" id="password" class="input-normal" required>
+                <div class="tombol-manajemen">
+                    <input type="submit" value="Submit" name="register">
+                </div>
+            </form>
+            <p class="error-message"><?php echo $error_message; ?></p>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright 2024&copy; </p>
+    </footer>
+    <script src="script/index.js"></script>
+</body>
+</html>

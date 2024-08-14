@@ -1,0 +1,86 @@
+.title {
+    font-size: 25px;
+    text-align: center;
+}
+
+main{
+    height: 100%;
+}
+
+.profile-pictures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    max-height: 50%;
+    margin: 20px 0;
+}
+
+.profile-pictures img{
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.account-input{
+    max-height: 100%;
+    margin: 25px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-input h3{
+    font-size: 25px;
+}
+
+.account-input form{
+    margin: 20px 0;
+}
+
+.account-input form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+}
+
+.account-input form label{
+    margin-top: 15px;
+}
+
+.input-normal{
+    padding: 10px 15px;
+    border: 0.001em solid black;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.tombol-manajemen{
+    margin-top: 25px;
+}
+
+.tombol-manajemen input{
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color:#48dbfb;
+    border-radius: 8px;
+    width: 25%;
+    cursor: pointer;
+}
+
+.error-message{
+    font-size: 10px;
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+
+
